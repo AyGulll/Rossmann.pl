@@ -144,7 +144,7 @@ public class _1_SignUp extends BaseDriver {
         enter.click();
 
 
-        //BekleveKapat();
+        BekleveKapat();
     }
 
 
