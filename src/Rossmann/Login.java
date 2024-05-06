@@ -33,13 +33,12 @@ public class Login extends BaseDriver {
            mailadress.sendKeys("abilovaygul@gmail.com");
            WebElement password=driver.findElement(By.id("login-password"));
            password.sendKeys("YXt4_A@s-CYK!6g");
-           WebElement clickbutton=driver.findElement(By.id("id attribute is not available for this element"));
-           clickbutton.click();
-           WebElement clicckbutton2=driver.findElement(By.xpath("//label[2]//span[1]"));
-           clicckbutton2.click();
-           WebElement robot=driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-checkmark']"));
+         //  WebElement clickbutton=driver.findElement(By.id("id attribute is not available for this element"));
+          //  clickbutton.click();
+
+           WebElement robot=driver.findElement(By.xpath("//label[@class='checkbox is-valid']//span[@class='checkbox']"));
            robot.click();
-           WebElement hesabyarat=driver.findElement(By.xpath("//font[contains(text(),'Hesab yarat')]"));
+           WebElement hesabyarat=driver.findElement(By.id("id attribute is not available for this element"));
            hesabyarat.click();
            WebElement parolhatirla=driver.findElement(By.xpath("//button[@class='btn \tbtn-primary \t \t \t \t \t \tmb-2']"));
            parolhatirla.click();
