@@ -43,6 +43,8 @@ public class Login extends BaseDriver {
            WebElement parolhatirla=driver.findElement(By.xpath("//button[@class='btn \tbtn-primary \t \t \t \t \t \tmb-2']"));
            parolhatirla.click();
 
+           BekleveKapat();
+
        }
 
 }
