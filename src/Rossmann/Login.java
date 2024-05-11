@@ -38,7 +38,7 @@ public class Login extends BaseDriver {
 
            WebElement robot=driver.findElement(By.xpath("//label[@class='checkbox is-valid']//span[@class='checkbox']"));
            robot.click();
-           WebElement hesabyarat=driver.findElement(By.xpath("btn btn-white shadow"));
+           WebElement hesabyarat=driver.findElement(By.id("btn btn-white shadow"));
            hesabyarat.click();
            WebElement parolhatirla=driver.findElement(By.xpath("//button[@class='btn \tbtn-primary \t \t \t \t \t \tmb-2']"));
            parolhatirla.click();
