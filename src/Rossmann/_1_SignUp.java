@@ -142,6 +142,7 @@ public class _1_SignUp extends BaseDriver {
         MyFunction.wait(3);
         WebElement enter= driver.findElement(By.xpath("//input[@id='lfb']"));
         enter.click();
+        WebElement deleteaccount=driver.findElement(By.id(""));
 
 
         BekleveKapat();
