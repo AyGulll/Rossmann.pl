@@ -38,8 +38,12 @@ public class Login extends BaseDriver {
 
            WebElement robot=driver.findElement(By.xpath("//label[@class='checkbox is-valid']//span[@class='checkbox']"));
            robot.click();
-           WebElement hesabyarat=driver.findElement(By.className("bbtn btn-white shadow"));
+           WebElement hesabyarat=driver.findElement(By.xpath("//*[@class='btn btn-white shadow']"));
            hesabyarat.click();
+           WebElement adress=driver.findElement(By.xpath("//*[@id=\"email\"]"));
+           adress.sendKeys("abilovaygul@gmail.com");
+           WebElement haslo=driver.findElement(By.xpath("//input[@id='password']"));
+           haslo.sendKeys("YXt4_A@s-CYK!6g");
            WebElement parolhatirla=driver.findElement(By.xpath("//button[@class='btn \tbtn-primary \t \t \t \t \t \tmb-2']"));
            parolhatirla.click();
 
