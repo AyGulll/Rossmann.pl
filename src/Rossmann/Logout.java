@@ -27,6 +27,7 @@ public class Logout extends BaseDriver {
         logout.click();
 
         MyFunction.wait(1);
+        BekleveKapat();
 
     }
 }
