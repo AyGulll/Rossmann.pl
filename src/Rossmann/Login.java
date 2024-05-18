@@ -21,7 +21,7 @@ public class Login extends BaseDriver {
            driver.get("https://www.rossmann.pl/");
            driver.manage().window().maximize();
            MyFunction.wait(2);
-           WebElement profil=driver.findElement(By.xpath("//span[normalize-space()='Profil']"));
+           WebElement profil=driver.findElement(By.xpath("//font[contains(text(),'Profil')]"));
            profil.click();
            WebElement cancel=driver.findElement(By.id("onetrust-close-btn-container"));
            cancel.click();
