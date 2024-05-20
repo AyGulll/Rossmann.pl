@@ -15,7 +15,7 @@ public class Logout extends BaseDriver {
         WebElement login=driver.findElement(By.xpath(""));
         login.click();
 
-        WebElement mail=driver.findElement(By.xpath(""));
+        WebElement mail=driver.findElement(By.xpath("//*[@class='btn btn-white shadow']"));
         mail.sendKeys("abilovaygul@gmail.com");
 
         WebElement password=driver.findElement(By.xpath(""));
