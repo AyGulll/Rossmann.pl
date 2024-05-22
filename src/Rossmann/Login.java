@@ -26,9 +26,9 @@ public class Login extends BaseDriver {
            WebElement cancel=driver.findElement(By.xpath("//*[@id='onetrust-close-btn-container']"));
            cancel.click();
            WebElement login=driver.findElement(By.xpath("//*[@class='w-full Button-module_button--6GOIQ Button-module_primary--0q51X']"));
-           login.click();
-         //  WebElement createaccount=driver.findElement(By.xpath("//font[contains(text(),'Hesab yarat')]"));
-        //   createaccount.click();
+           login.isSelected();
+         // WebElement createaccount=driver.findElement(By.xpath("//font[contains(text(),'Hesab yarat')]"));
+         //  createaccount.click();
            WebElement mailadress=driver.findElement(By.xpath("//*[@id='login-user']"));
            mailadress.sendKeys("abilovaygul@gmail.com");
            WebElement password=driver.findElement(By.id("login-password"));
