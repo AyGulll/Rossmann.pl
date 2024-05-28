@@ -127,7 +127,7 @@ public class _1_SignUp extends BaseDriver {
 
     public void LoginTest(){
 
-        driver.get("https://www.akakce.com/");
+        driver.get("https://www.rossmann.pl/");
         WebElement login= driver.findElement(By.xpath("//*[text()='Giriş Yap']"));
         login.click();
         MyFunction.wait(3);
