@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Login extends BaseDriver {
+public class Login<JavascriptExecutor> extends BaseDriver {
     public static WebDriver driver;
 
     @Test
@@ -44,11 +44,11 @@ public class Login extends BaseDriver {
            adress.sendKeys("abilovaygul@gmail.com");
            WebElement haslo=driver.findElement(By.xpath("//input[@id='password']"));
            haslo.sendKeys("YXt4_A@s-CYK!6g");
-           WebElement checkbox=driver.findElement(By.id("id attribute is not available for this element"));
-           checkbox.click();
-           WebElement checkbox2=driver.findElement(By.xpath("//div[@id='__next']//label[1]//span[1]"));
+           JavascriptExecutor js = (JavascriptExecutor) driver;
+           WebElement checkbox2=driver.findElement(By.xpath("//*[@class='checkbox']"));
            checkbox2.click();
-           WebElement checkbox3=driver.findElement(By.xpath("//label[2]//span[1]"));
+          WebElement checkbox3=driver.findElement(By.xpath("//label[2]//span[1]"));
+          checkbox3.click();
            WebElement notrobot=driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-border']"));
            notrobot.click();
            WebElement createaccount1=driver.findElement(By.xpath("//button[@type='submit']"));
