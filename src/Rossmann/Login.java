@@ -27,8 +27,8 @@ public class Login extends BaseDriver {
            cancel.click();
            WebElement login=driver.findElement(By.xpath("//*[@class='w-full Button-module_button--6GOIQ Button-module_primary--0q51X']"));
            login.isSelected();
-         // WebElement createaccount=driver.findElement(By.xpath("//font[contains(text(),'Hesab yarat')]"));
-         //  createaccount.click();
+         WebElement createaccount=driver.findElement(By.xpath("//a[@title='Profil']//*[name()='svg']"));
+          createaccount.click();
            WebElement mailadress=driver.findElement(By.xpath("//*[@id='login-user']"));
            mailadress.sendKeys("abilovaygul@gmail.com");
            WebElement password=driver.findElement(By.id("login-password"));
@@ -44,8 +44,15 @@ public class Login extends BaseDriver {
            adress.sendKeys("abilovaygul@gmail.com");
            WebElement haslo=driver.findElement(By.xpath("//input[@id='password']"));
            haslo.sendKeys("YXt4_A@s-CYK!6g");
-           WebElement parolhatirla=driver.findElement(By.xpath("//button[@class='btn \tbtn-primary \t \t \t \t \t \tmb-2']"));
-           parolhatirla.click();
+           WebElement checkbox=driver.findElement(By.id("id attribute is not available for this element"));
+           checkbox.click();
+           WebElement checkbox2=driver.findElement(By.xpath("//div[@id='__next']//label[1]//span[1]"));
+           checkbox2.click();
+           WebElement checkbox3=driver.findElement(By.xpath("//label[2]//span[1]"));
+           WebElement notrobot=driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-border']"));
+           notrobot.click();
+           WebElement createaccount1=driver.findElement(By.xpath("//button[@type='submit']"));
+           createaccount1.click();
 
            BekleveKapat();
 
