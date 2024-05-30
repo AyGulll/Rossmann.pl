@@ -45,7 +45,7 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            WebElement haslo=driver.findElement(By.xpath("//input[@id='password']"));
            haslo.sendKeys("YXt4_A@s-CYK!6g");
            JavascriptExecutor js = (JavascriptExecutor) driver;
-           WebElement checkbox2=driver.findElement(By.xpath("//*[@class='checkbox']"));
+           WebElement checkbox2=driver.findElement(By.xpath("//div[@id='__next']//label[1]//span[1]"));
            checkbox2.click();
           WebElement checkbox3=driver.findElement(By.xpath("//label[2]//span[1]"));
           checkbox3.click();
