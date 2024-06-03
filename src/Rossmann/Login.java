@@ -23,7 +23,7 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            MyFunction.wait(2);
            WebElement profil=driver.findElement(By.xpath("//*[@class='NavUserButtons-module_dropBtn--qqaUv']"));
            profil.click();
-           WebElement cancel=driver.findElement(By.xpath("//*[@id='onetrust-close-btn-container']"));
+           WebElement cancel=driver.findElement(By.xpath("//*[@class='onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon']"));
            cancel.click();
            WebElement login=driver.findElement(By.xpath("//*[@class='w-full Button-module_button--6GOIQ Button-module_primary--0q51X']"));
            login.isSelected();
@@ -45,7 +45,7 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            WebElement haslo=driver.findElement(By.xpath("//input[@id='password']"));
            haslo.sendKeys("YXt4_A@s-CYK!6g");
            JavascriptExecutor js = (JavascriptExecutor) driver;
-           WebElement checkbox2=driver.findElement(By.xpath("//div[@id='__next']//label[1]//span[1]"));
+           WebElement checkbox2=driver.findElement(By.id("//span[@class='checkbox'][1]"));
            checkbox2.click();
           WebElement checkbox3=driver.findElement(By.xpath("//label[2]//span[1]"));
           checkbox3.click();
