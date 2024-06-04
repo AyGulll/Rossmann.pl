@@ -45,7 +45,7 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            WebElement haslo=driver.findElement(By.xpath("//input[@id='password']"));
            haslo.sendKeys("YXt4_A@s-CYK!6g");
            JavascriptExecutor js = (JavascriptExecutor) driver;
-           WebElement checkbox2=driver.findElement(By.id("//span[@class='checkbox'][1]"));
+           WebElement checkbox2=driver.findElement(By.xpath("(//*[@class='form-control is-valid'])[1]"));
            checkbox2.click();
           WebElement checkbox3=driver.findElement(By.xpath("//label[2]//span[1]"));
           checkbox3.click();
@@ -53,6 +53,9 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            notrobot.click();
            WebElement createaccount1=driver.findElement(By.xpath("//button[@type='submit']"));
            createaccount1.click();
+
+           //WebElement firstElement = driver.findElement(By.xpath("(//*[@class='your-class-name'])[1]")); // İlk elementi seçer
+        //WebElement secondElement = driver.findElement(By.xpath("(//*[@class='your-class-name'])[2]")); // İkinci elementi seçer
 
            BekleveKapat();
 
