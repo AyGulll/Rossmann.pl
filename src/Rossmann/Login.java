@@ -45,7 +45,7 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            WebElement haslo=driver.findElement(By.xpath("//input[@id='password']"));
            haslo.sendKeys("YXt4_A@s-CYK!6g");
            JavascriptExecutor js = (JavascriptExecutor) driver;
-           WebElement checkbox2=driver.findElement(By.xpath("//*[@class='form-control is-invalid']"));
+           WebElement checkbox2=driver.findElement(By.xpath("//*[@class='checkbox my-2 is-valid'] [1]"));
            checkbox2.click();
           WebElement checkbox3=driver.findElement(By.xpath("//label[@class='checkbox my-2 is-valid'][1]"));
           checkbox3.click();
