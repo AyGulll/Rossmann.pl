@@ -21,9 +21,9 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            driver.get("https://www.rossmann.pl/");
            driver.manage().window().maximize();
            MyFunction.wait(2);
-           WebElement profil=driver.findElement(By.xpath("//*[@class='NavUserButtons-module_dropBtn--qqaUv']"));
-           profil.click();
-           WebElement cancel=driver.findElement(By.xpath("//font[contains(text(),'Hamısını atın')]"));
+         //  WebElement profil=driver.findElement(By.xpath("//*[@class='NavUserButtons-module_dropBtn--qqaUv']"));
+         //  profil.click();
+           WebElement cancel=driver.findElement(By.xpath("//*[@id='onetrust-reject-all-handler']"));
            cancel.click();
            WebElement createaccount=driver.findElement(By.xpath("//a[@title='Profil']//*[name()='svg']"));
           createaccount.click();
