@@ -23,7 +23,7 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            MyFunction.wait(2);
            WebElement profil=driver.findElement(By.xpath("//*[@class='NavUserButtons-module_dropBtn--qqaUv']"));
            profil.click();
-           WebElement cancel=driver.findElement(By.xpath("//*[@class='onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon']"));
+           WebElement cancel=driver.findElement(By.xpath("//font[contains(text(),'Hamısını atın')]"));
            cancel.click();
            WebElement createaccount=driver.findElement(By.xpath("//a[@title='Profil']//*[name()='svg']"));
           createaccount.click();
