@@ -31,6 +31,7 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            mailadress.sendKeys("test1234@gmil.com");
            WebElement password=driver.findElement(By.xpath("//input[@id='login-password']"));
            password.sendKeys("54321Trewq!");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
            WebElement robot=driver.findElement(By.xpath("//label[@class='checkbox is-valid']//span[@class='checkbox']"));
            robot.click();
