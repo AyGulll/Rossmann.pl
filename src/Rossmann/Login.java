@@ -41,12 +41,12 @@ public class Login<JavascriptExecutor> extends BaseDriver {
            adress.sendKeys("test1234@gmil.com");
            WebElement haslo=driver.findElement(By.xpath("//input[@id='password']"));
            haslo.sendKeys("54321Trewq!");
-           JavascriptExecutor js = (JavascriptExecutor) driver;
+
            WebElement checkbox2=driver.findElement(By.xpath("(//*[@class='checkbox my-2 is-valid']) [1]"));
            checkbox2.click();
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
-          WebElement checkbox3=driver.findElement(By.xpath("(//*[@class='checkbox']) [2]"));
-          checkbox3.click();
+          WebElement checkbox3=driver.findElements(By.xpath("(//*[@class='checkbox']) [2])"));
+           checkbox2.click();
            WebElement notrobot=driver.findElement(By.xpath("//div[@id='__next']//label[1]//span[1]"));
            notrobot.click();
            WebElement createaccount1=driver.findElement(By.xpath("//button[@type='submit']"));
