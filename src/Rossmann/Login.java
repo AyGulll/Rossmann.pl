@@ -44,9 +44,8 @@ public class Login<JavascriptExecutor> extends BaseDriver {
 
            WebElement checkbox2=driver.findElement(By.xpath("(//*[@class='checkbox my-2 is-valid']) [1]"));
            checkbox2.click();
-        JavascriptExecutor js1 = (JavascriptExecutor) driver;
-          WebElement checkbox3=driver.findElements(By.xpath("(//*[@class='checkbox']) [2])"));
-           checkbox2.click();
+           WebElement checkbox3=driver.findElement(By.xpath("(//input[@type='checkbox'] )[2]"));
+           checkbox3.click();
            WebElement notrobot=driver.findElement(By.xpath("//div[@id='__next']//label[1]//span[1]"));
            notrobot.click();
            WebElement createaccount1=driver.findElement(By.xpath("//button[@type='submit']"));
