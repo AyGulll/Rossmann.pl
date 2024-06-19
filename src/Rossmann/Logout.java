@@ -13,10 +13,9 @@ public class Logout extends BaseDriver {
     public void LogoutTest(){
         driver.get("https://www.rossmann.pl/");
         WebElement cancel=driver.findElement(By.xpath("//*[@id='onetrust-reject-all-handler']"));
+        cancel.click();
         WebElement login=driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M12.5 12.9')]"));
-
         login.click();
-
         WebElement mail=driver.findElement(By.xpath("//*[@class='btn btn-white shadow']"));
         mail.sendKeys("abilovaygul@gmail.com");
 
