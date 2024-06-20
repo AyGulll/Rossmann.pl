@@ -14,8 +14,10 @@ public class Logout extends BaseDriver {
         driver.get("https://www.rossmann.pl/");
         WebElement cancel=driver.findElement(By.xpath("//*[@id='onetrust-reject-all-handler']"));
         cancel.click();
-        WebElement login=driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M12.5 12.9')]"));
+        WebElement login=driver.findElement(By.xpath("//*[@class='NavUserButtons-module_dropBtn--qqaUv']"));
         login.click();
+        WebElement daxilol=driver.findElement(By.xpath("//button[@class='w-full Button-module_button--6GOIQ Button-module_primary--0q51X']"));
+        daxilol.click();
         WebElement mail=driver.findElement(By.xpath("//*[@class='btn btn-white shadow']"));
         mail.sendKeys("abilovaygul@gmail.com");
 
