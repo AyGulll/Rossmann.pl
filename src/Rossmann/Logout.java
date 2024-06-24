@@ -16,13 +16,12 @@ public class Logout extends BaseDriver {
         cancel.click();
         WebElement login=driver.findElement(By.xpath("//*[@class='NavUserButtons-module_dropBtn--qqaUv']"));
         login.click();
-        WebElement daxilol=driver.findElement(By.xpath("//button[@class='w-full Button-module_button--6GOIQ Button-module_primary--0q51X']"));
+        WebElement daxilol=driver.findElement(By.xpath("//*[@class='NavUserButtons-module_dropBtn--qqaUv'] [1]"));
         daxilol.click();
         WebElement mail=driver.findElement(By.xpath("//*[@class='btn btn-white shadow']"));
-        mail.sendKeys("abilovaygul@gmail.com");
-
+        mail.sendKeys("test1234@gmil.com");
         WebElement password=driver.findElement(By.xpath(""));
-        password.sendKeys("YXt4_A@s-CYK!6g");
+        password.sendKeys("54321Trewq!");
         WebElement clickgiris=driver.findElement(By.id(""));
         clickgiris.click();
         MyFunction.wait(1);
