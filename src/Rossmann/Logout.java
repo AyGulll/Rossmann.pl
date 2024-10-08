@@ -22,11 +22,11 @@ public class Logout extends BaseDriver {
         mail.sendKeys("test1234@gmil.com");
         WebElement password=driver.findElement(By.xpath("//div[@id='__next']//div[2]//div[1]//input[1]"));
         password.sendKeys("54321Trewq!");
-        WebElement rememberme=driver.findElement(By.id("//*[@name='stayLoggedIn']"));
+        WebElement rememberme=driver.findElement(By.xpath("//input[@name='stayLoggedIn']"));
         rememberme.click();
 
         MyFunction.wait(1);
-        WebElement logout=driver.findElement(By.xpath(""));
+        WebElement logout=driver.findElement(By.xpath("//*[@class='w-100 mt-4 Button-module_button--6GOIQ Button-module_primary--0q51X']"));
         logout.click();
 
         MyFunction.wait(1);
